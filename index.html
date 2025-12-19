@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tie Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+  <header>
+    <h1>Tie Tac Toe</h1>
+    <p>Advanced JavaScript board game with AI & themes</p>
+  </header>
+
+  <div class="top-controls">
+    <select id="mode">
+      <option value="pvp">Player vs Player</option>
+      <option value="ai">Player vs Computer</option>
+    </select>
+
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard (AI)</option>
+    </select>
+
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </div>
+
+  <div class="board" id="board"></div>
+
+  <p id="status"></p>
+
+  <section class="stats">
+    <div>X Wins: <span id="xScore">0</span></div>
+    <div>O Wins: <span id="oScore">0</span></div>
+    <div>Draws: <span id="draws">0</span></div>
+    <div>Last Winner: <span id="lastWinner">-</span></div>
+  </section>
+
+  <div class="bottom-controls">
+    <button onclick="restartGame()">Restart</button>
+    <button onclick="resetStats()">Reset Stats</button>
+    <button onclick="clearHistory()">Clear History</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
